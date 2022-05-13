@@ -6,6 +6,7 @@ class TrackOrders:
     def __len__(self):
         return len(self.log)
 
+
     def add_new_order(self, customer, order, day):
         self.log.append({"customer": customer, "order": order, "day": day})
 
@@ -68,7 +69,7 @@ class TrackOrders:
 
             if count[row['day']] > count[array[0]['day']]:
                 array[0]['day'] = row['day']
-    
+
         return array[0]['day']
 
     def get_least_busy_day(self):
