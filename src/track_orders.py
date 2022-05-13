@@ -2,10 +2,8 @@ class TrackOrders:
     def __init__(self):
         self.log = []
 
-
     def __len__(self):
         return len(self.log)
-
 
     def add_new_order(self, customer, order, day):
         self.log.append({"customer": customer, "order": order, "day": day})
