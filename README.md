@@ -1,48 +1,36 @@
-### Termos e acordos
+# Projeto Restaurant Orders
 
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do
-Manual da Pessoa Estudante da Trybe.
-
-# Boas vindas ao repositório do projeto Restaurant Orders!
-
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
+Projeto em Python na Trybe 🚀
 
 ---
 
 # Sumário
 
-- [Habilidades](#habilidades)
-- [Entregáveis](#entregáveis)
-  - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
-  - [Desenvolvimento](#desenvolvimento)
-  - [Data de Entrega](#data-de-entrega)
-- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
-  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
-  - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-- [Como desenvolver](#como-desenvolver)
-  - [Linter](#linter)
-- [Requisitos do projeto](#requisitos-do-projeto)
+-   [Habilidades](#habilidades)
+-   [Entregáveis](#entregáveis)
+    -   [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
+    -   [Desenvolvimento](#desenvolvimento)
+-   [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
+
+-   [Como desenvolver](#como-desenvolver)
+    -   [Linter](#linter)
+-   [Requisitos do projeto](#requisitos-do-projeto)
 
     `Requisitos obrigatórios:`
-    - [1 - Campanha de publicidade, implemente um método chamado analyze_log no módulo src/analyze_log.py que gere informações de uma lanchonete.](#1---campanha-de-publicidade-implemente-um-método-chamado-analyze_log-no-módulo-srcanalyze_logpy-que-gere-informações-de-uma-lanchonete)
-    - [2 - Análises contínuas, implemente a classe TrackOrders que gere informações contínuas de uma lanchonete.](#2---análises-contínuas-implemente-a-classe-trackorders-que-gere-informações-contínuas-de-uma-lanchonete)
-    
-    `Requisitos bônus:`
-    - [3 - Controle de estoque](#3---controle-de-estoque)
-    - [4 - Estoque pode acabar](#4---estoque-pode-acabar)
-- [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
-- [Revisando um pull request](#revisando-um-pull-request)
-- [Avisos Finais](#avisos-finais)
 
----
+    -   [1 - Campanha de publicidade, implemente um método chamado analyze_log no módulo src/analyze_log.py que gere informações de uma lanchonete.](#1---campanha-de-publicidade-implemente-um-método-chamado-analyze_log-no-módulo-srcanalyze_logpy-que-gere-informações-de-uma-lanchonete)
+    -   [2 - Análises contínuas, implemente a classe TrackOrders que gere informações contínuas de uma lanchonete.](#2---análises-contínuas-implemente-a-classe-trackorders-que-gere-informações-contínuas-de-uma-lanchonete)
+
+    `Requisitos bônus:`
+
+    -   [3 - Controle de estoque](#3---controle-de-estoque)
+    -   [4 - Estoque pode acabar](#4---estoque-pode-acabar)
 
 ## Habilidades
 
-- Trabalhar com Hash map e Dict
+-   Trabalhar com Hash map e Dict
 
-- Trabalhar com Set
+-   Trabalhar com Set
 
 ---
 
@@ -66,100 +54,17 @@ O projeto está estruturado em duas etapas obrigatórias, e a tarefa bônus, tam
 
 ---
 
-## Data de Entrega
-
-  - Serão `1` dias de projeto.
-  - Data de entrega para avaliação final do projeto: `12/05/2022 14:00`.
-
----
-
 ## Instruções para entregar seu projeto:
-
-### ANTES DE COMEÇAR A DESENVOLVER:
-
-### Recomendações
-- **⚠ Para o desenvolvimento deste projeto recomendamos o uso da versão 3.8 ou 3.9 da linguagem Python. Para saber a versão que está configurada em seu dispositivo execute o comando `python3 -V` em seu terminal. Para mais detalhes relacionados a configuração do ambiente Python consulte o nosso [guia de configuração de ambiente](https://app.betrybe.com/course/real-life-engineer/python).**
-
-1. Clone o repositório
-
-- `git clone git@github.com:tryber/sd-013-c-restaurant-orders.git`.
-- Entre na pasta do repositório que você acabou de clonar:
-  - `sd-013-c-restaurant-orders`
-
-2. Crie o ambiente virtual para o projeto
-
-- `python3 -m venv .venv && source .venv/bin/activate`
-
-3. Instale as dependências
-
-- `python3 -m pip install -r dev-requirements.txt`
-
-- Caso tenha algum problema de instalação das dependências, tente instalar a biblioteca `wheel` e depois execute o comando anterior novamente
-- `python3 -m pip install wheel`
-
-4. Crie uma branch a partir da branch `master`
-
-- Verifique que você está na branch `master`
-  - Exemplo: `git branch`
-- Se não estiver, mude para a branch `master`
-  - Exemplo: `git checkout master`
-- Agora crie uma branch à qual você vai submeter os `commits` do seu projeto
-  - Você deve criar uma branch no seguinte formato: `nome-github-nome-do-projeto`
-  - Exemplo: `git checkout -b exemplo-project-name`
-
-5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-
-- Verifique que as mudanças ainda não estão no _stage_
-  - Exemplo: `git status` (deve aparecer listada a pasta _exemplo_ em vermelho)
-- Adicione o novo arquivo ao _stage_ do Git
-  - Exemplo:
-    - `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-    - `git status` (deve aparecer listado o arquivo _exemplo/README.md_ em verde)
-- Faça o `commit` inicial
-  - Exemplo:
-    - `git commit -m 'iniciando o projeto project-name'` (fazendo o primeiro commit)
-    - `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-6. Adicione a sua branch com o novo `commit` ao repositório remoto
-
-- Usando o exemplo anterior: `git push -u origin exemplo-project-name`
-
-7. Crie um novo `Pull Request` _(PR)_
-
-- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-013-c-restaurant-orders/pulls)
-- Clique no botão verde _"New pull request"_
-- Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-- Clique no botão verde _"Create pull request"_
-- Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-- **Não se preocupe em preencher mais nada por enquanto!**
-- Volte até a página de _Pull Requests_ do repositório e confira que o seu _Pull Request_ está criado
-
----
-
-### Durante o desenvolvimento
-
-- Faça `commits` das alterações que você fizer no código regularmente
-
-- Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
-
-- Os comandos que você utilizará com mais frequência são:
-  1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-  2. `git add` _(para adicionar arquivos ao stage do Git)_
-  3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-  4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-  5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
-
----
 
 ## Como desenvolver
 
 **Estrutura do repositório**
 
-- No diretório `src/` você vai encontrar os arquivos onde devem ser implementadas todas as classes e métodos que você considerar importantes para resolver cada etapa do projeto;
+-   No diretório `src/` você vai encontrar os arquivos onde devem ser implementadas todas as classes e métodos que você considerar importantes para resolver cada etapa do projeto;
 
-- No diretório `data/` você vai encontrar os arquivos de _log_ que deverão ser utilizados em cada etapa;
+-   No diretório `data/` você vai encontrar os arquivos de _log_ que deverão ser utilizados em cada etapa;
 
-- Os testes devem ser implementados nos arquivos do diretório `tests/`.
+-   Os testes devem ser implementados nos arquivos do diretório `tests/`.
 
 ## Testes
 
@@ -186,6 +91,7 @@ Para verificar se o seu projeto está correto basta executar o seguinte comando:
 ```bash
 $ python3 -m pytest
 ```
+
 Para fazer um teste que para ao encontrar o primeiro erro coloque `-x` ao final do comando
 
 ```bash
@@ -197,12 +103,12 @@ Para rodar um arquivo de testes específico use (exemplo)
 ```bash
 $ python3 -m pytest tests/test_analyze_log.py
 ```
+
 Para fazer um teste baseado no nome (pode ser parte do nome) use `-k` seguido do nome (exemplo)
 
 ```bash
 $ python3 -m pytest -k test_validate_content_of_generated_file
 ```
-
 
 ## Linter
 
@@ -211,7 +117,8 @@ Para verificar se você está seguindo o guia de estilo do Python corretamente, 
 ```bash
 $ python3 -m flake8
 ```
-Para corrigir a maior parte dos erros de Linter automaticamente use 
+
+Para corrigir a maior parte dos erros de Linter automaticamente use
 
 ```bash
 $ python3 -m black nome_do_arquivo.py
@@ -225,13 +132,13 @@ $ python3 -m black nome_do_arquivo.py
 
 A lanchonete quer promover ações de marketing e, para isso, a agência de publicidade precisa exatamente das informações abaixo:
 
-- Qual o prato mais pedido por 'maria'?
+-   Qual o prato mais pedido por 'maria'?
 
-- Quantas vezes 'arnaldo' pediu 'hamburguer'?
+-   Quantas vezes 'arnaldo' pediu 'hamburguer'?
 
-- Quais pratos 'joao' nunca pediu?
+-   Quais pratos 'joao' nunca pediu?
 
-- Quais dias 'joao' nunca foi na lanchonete?
+-   Quais dias 'joao' nunca foi na lanchonete?
 
 #### Dados
 
@@ -243,13 +150,13 @@ O `log` a ser utilizado é o arquivo `data/orders_1.csv`. Todas as informações
 
 No arquivo `analyze_log.py`, escreva uma função que responda às seguintes perguntas abaixo:
 
-- Qual o prato mais pedido por 'maria'?
+-   Qual o prato mais pedido por 'maria'?
 
-- Quantas vezes 'arnaldo' pediu 'hamburguer'?
+-   Quantas vezes 'arnaldo' pediu 'hamburguer'?
 
-- Quais pratos 'joao' nunca pediu?
+-   Quais pratos 'joao' nunca pediu?
 
-- Quais dias 'joao' nunca foi na lanchonete?
+-   Quais dias 'joao' nunca foi na lanchonete?
 
 A função não retornará nada! A função deve apenas salvar as respostas no arquivo `data/mkt_campaign.txt`, na mesma ordem que acima.
 
@@ -271,40 +178,40 @@ hamburguer
 
 > A órdem dos pedidos, bem como dos dias não precisa ser exatamente a apresentada no exemplo
 
-- No arquivo analyze_log.py deve estar implementada a função `def analyze_log(path_to_file)`;
+-   No arquivo analyze_log.py deve estar implementada a função `def analyze_log(path_to_file)`;
 
-- A função deve realizar a leitura do `log` e salvar em um arquivo `txt` as informações solicitadas;
+-   A função deve realizar a leitura do `log` e salvar em um arquivo `txt` as informações solicitadas;
 
-- Utilização correta de `Dict/Set`, vistos no módulo;
+-   Utilização correta de `Dict/Set`, vistos no módulo;
 
-- Código legível e modularizado, quando for o caso.
+-   Código legível e modularizado, quando for o caso.
 
 ##### As seguintes verificações serão feitas:
 
-- 1.1 - Será validado se, ao executar o método `analyze_log`, os dados são preenchidos de forma correta no arquivo `data/mkt_campaign.txt`
+-   1.1 - Será validado se, ao executar o método `analyze_log`, os dados são preenchidos de forma correta no arquivo `data/mkt_campaign.txt`
 
-- 1.2 - Será validado se, ao executar o método `analyze_log` com um arquivo inexistente, o método retorna um erro `FileNotFoundError` com a mensagem de erro abaixo:
-  ```
-  "Arquivo inexistente: '{nome_do_arquivo}'"
-  ```
-- 1.3 - Será validado se, ao executar o método `analyze_log` com uma extensão inválida, o método retorna um erro com a mensagem abaixo:
-  ```
-  "Extensão inválida: '{nome_do_arquivo}'"
-  ```
-  
+-   1.2 - Será validado se, ao executar o método `analyze_log` com um arquivo inexistente, o método retorna um erro `FileNotFoundError` com a mensagem de erro abaixo:
+    ```
+    "Arquivo inexistente: '{nome_do_arquivo}'"
+    ```
+-   1.3 - Será validado se, ao executar o método `analyze_log` com uma extensão inválida, o método retorna um erro com a mensagem abaixo:
+    ```
+    "Extensão inválida: '{nome_do_arquivo}'"
+    ```
+
 ### 2 - Análises contínuas, implemente a classe `TrackOrders` que gere informações contínuas de uma lanchonete.
 
 A campanha de marketing foi um sucesso! A gerência agora deseja um sistema que mantenha um registro contínuo dessas informações. Mais especificamente, desejam que o sistema permita a extração das seguintes informações a qualquer momento:
 
-- Prato favorito por cliente;
+-   Prato favorito por cliente;
 
-- Pratos nunca pedidos por cada cliente;
+-   Pratos nunca pedidos por cada cliente;
 
-- Dias nunca visitados por cada cliente;
+-   Dias nunca visitados por cada cliente;
 
-- Dia mais movimentado;
+-   Dia mais movimentado;
 
-- Dia menos movimentado.
+-   Dia menos movimentado.
 
 Para isso, você deverá implementar uma classe que entregue as informações acima.
 
@@ -312,12 +219,11 @@ Para isso, você deverá implementar uma classe que entregue as informações ac
 
 **Arquivos**
 
-- O arquivo `track_orders.py` é onde você implementará a classe `TrackOrders`.
+-   O arquivo `track_orders.py` é onde você implementará a classe `TrackOrders`.
 
-- O arquivo `src/main.py` é apenas auxiliar e faz a leitura do arquivo `csv` especificado e envia a informação de cada pedido para as classes `TrackOrders` e para a classe `InventoryControl`, ao mesmo tempo. Não se preocupe ainda com o arquivo `inventory_control.py` (classe InventoryControl), pois ele é necessário apenas para a realização dos requisitos bônus.
+-   O arquivo `src/main.py` é apenas auxiliar e faz a leitura do arquivo `csv` especificado e envia a informação de cada pedido para as classes `TrackOrders` e para a classe `InventoryControl`, ao mesmo tempo. Não se preocupe ainda com o arquivo `inventory_control.py` (classe InventoryControl), pois ele é necessário apenas para a realização dos requisitos bônus.
 
-- Ainda no arquivo `src/main.py`, após a leitura completa do arquivo `csv`, algumas informações são impressas na tela para que você observe o comportamento das classes.
-
+-   Ainda no arquivo `src/main.py`, após a leitura completa do arquivo `csv`, algumas informações são impressas na tela para que você observe o comportamento das classes.
 
 **Teste o comportamento do arquivo `main.py`**
 
@@ -354,29 +260,29 @@ class TrackOrders:
 
 > Você é livre para criar os atributos e métodos necessários. Lembre-se de criar uma classe legível e bem modularizada. Lembre-se também de não incorrer em otimização prematura. Ou seja, não implemente funcionalidades que ainda não são necessárias, nem coloque atributos do tipo "vai que um dia precisa". Sempre rode o arquivo `main.py` para verificar o comportamento da sua classe.
 
-- Classe `TrackOrders` implementada;
+-   Classe `TrackOrders` implementada;
 
-- A classe está devidamente modularizada;
+-   A classe está devidamente modularizada;
 
-- Os métodos fazem uso das técnicas de `Dict` e `Set` vistos no módulo;
+-   Os métodos fazem uso das técnicas de `Dict` e `Set` vistos no módulo;
 
-- Os métodos atingem complexidade ótima (geralmente `O(1)` ou `O(n)`, em alguns métodos que usam `Set`).
+-   Os métodos atingem complexidade ótima (geralmente `O(1)` ou `O(n)`, em alguns métodos que usam `Set`).
 
 ##### As seguintes verificações serão feitas:
 
-- 2.1 - Será validado se, ao instanciar a classe `TrackOrders` pela primeira vez, o método `len()` retorna a quantidade de pedidos igual a zero.
+-   2.1 - Será validado se, ao instanciar a classe `TrackOrders` pela primeira vez, o método `len()` retorna a quantidade de pedidos igual a zero.
 
-- 2.2 - Será validado se, ao executar o método `add_new_order`, o método registra um pedido na instância.
+-   2.2 - Será validado se, ao executar o método `add_new_order`, o método registra um pedido na instância.
 
-- 2.3 - Será validado se, ao executar `get_most_ordered_dish_per_customer`, o método retorna o prato mais pedido.
+-   2.3 - Será validado se, ao executar `get_most_ordered_dish_per_customer`, o método retorna o prato mais pedido.
 
-- 2.4 - Será validado se, ao executar `get_never_ordered_per_customer`, o método retorna o conjunto de pratos que a pessoa nunca pediu.
+-   2.4 - Será validado se, ao executar `get_never_ordered_per_customer`, o método retorna o conjunto de pratos que a pessoa nunca pediu.
 
-- 2.5 - Será validado se, ao executar `get_days_never_visited_per_customer`, o método retorna o conjunto de dias que a pessoa nunca visitou.
+-   2.5 - Será validado se, ao executar `get_days_never_visited_per_customer`, o método retorna o conjunto de dias que a pessoa nunca visitou.
 
-- 2.6 - Será validado se, ao executar o método `get_busiest_day`, o método retorna o dia mais movimentado.
+-   2.6 - Será validado se, ao executar o método `get_busiest_day`, o método retorna o dia mais movimentado.
 
-- 2.7 - Será validado se, ao executar o método `get_least_busy_day`, o método retorna o dia menos movimentado.
+-   2.7 - Será validado se, ao executar o método `get_least_busy_day`, o método retorna o dia menos movimentado.
 
 ---
 
@@ -428,23 +334,23 @@ class InventoryControl:
         pass
 ```
 
-- Classe `InventoryControl` implementada;
+-   Classe `InventoryControl` implementada;
 
-- A classe está devidamente modularizada;
+-   A classe está devidamente modularizada;
 
-- Garanta que todos os ingredientes e pratos foram testados;
+-   Garanta que todos os ingredientes e pratos foram testados;
 
-- Os métodos devem fazer uso das técnicas de `Dict` e `Set` vistos no módulo;
+-   Os métodos devem fazer uso das técnicas de `Dict` e `Set` vistos no módulo;
 
-- Os métodos atingem complexidade ótima (geralmente `O(1)` ou `O(n)`, em alguns métodos que usam `Set`).
+-   Os métodos atingem complexidade ótima (geralmente `O(1)` ou `O(n)`, em alguns métodos que usam `Set`).
 
 ##### As seguintes verificações serão feitas:
 
-- 3.1 - Será validado se, ao executar o método `get_quantities_to_buy`, o método retorna a quantidade de ingredientes que precisam ser comprados.
+-   3.1 - Será validado se, ao executar o método `get_quantities_to_buy`, o método retorna a quantidade de ingredientes que precisam ser comprados.
 
-- 3.2 - Será validado se, ao executar o método `get_quantities_to_buy` para todos os hambúrgueres, o método retorna a quantidade de ingredientes que precisam ser comprados.
+-   3.2 - Será validado se, ao executar o método `get_quantities_to_buy` para todos os hambúrgueres, o método retorna a quantidade de ingredientes que precisam ser comprados.
 
-- 3.3 - Será validado se, ao executar o método `get_quantities_to_buy` para receitas diferentes, o método retorna a quantidade de ingredientes que precisam ser comprados.
+-   3.3 - Será validado se, ao executar o método `get_quantities_to_buy` para receitas diferentes, o método retorna a quantidade de ingredientes que precisam ser comprados.
 
 ### 4 - Estoque pode acabar
 
@@ -453,11 +359,11 @@ As campanhas de marketing tiveram sucesso novamente, e atraíram muitas novas pe
 Suponha os seguintes estoques:
 
 ```md
-- Pao: 1;
+-   Pao: 1;
 
-- Queijo: 5;
+-   Queijo: 5;
 
-- Presunto: 3.
+-   Presunto: 3.
 ```
 
 Se uma pessoa pedir um misto-quente, será possível atendê-la. Porém o pão irá acabar. Se a próxima pessoa pedir hamburguer, não será possível atendê-la. Sua missão é implementar um código que, caso algum ingrediente acabe, todos os pratos que usam aquele ingrediente devem ser imediatamente removidos do cardápio eletrônico, evitando gerar frustração em clientes.
@@ -481,53 +387,22 @@ def get_available_dishes():
 
 Altere o arquivo `main.py`:
 
-- Caso o prato que a pessoa solicitou não esteja disponível, não registre o pedido na execução do método `add_new_order`.
+-   Caso o prato que a pessoa solicitou não esteja disponível, não registre o pedido na execução do método `add_new_order`.
 
-- Novo método, `get_available_dishes`, implementado e funcionando corretamente.
+-   Novo método, `get_available_dishes`, implementado e funcionando corretamente.
 
-- Alteração na `main.py` produzindo o efeito esperado.
+-   Alteração na `main.py` produzindo o efeito esperado.
 
-- As classes/métodos estão devidamente modularizadas;
+-   As classes/métodos estão devidamente modularizadas;
 
-- Os métodos fazem uso das técnicas de `Dict` e `Set` vistos no módulo;
+-   Os métodos fazem uso das técnicas de `Dict` e `Set` vistos no módulo;
 
 ##### As seguintes verificações serão feitas:
 
-- 4.1 - Será validado se, ao executar o método `add_new_order` para um pedido com prato que não possui ingrediantes suficientes em estoque, o método retorna `False` sem registrar o pedido.
+-   4.1 - Será validado se, ao executar o método `add_new_order` para um pedido com prato que não possui ingrediantes suficientes em estoque, o método retorna `False` sem registrar o pedido.
 
-- 4.2 - Será validado se, ao executar o método `get_available_dishes`, o método retorna todos os pratos que possuem ingredientes suficientes para seu preparo.
+-   4.2 - Será validado se, ao executar o método `get_available_dishes`, o método retorna todos os pratos que possuem ingredientes suficientes para seu preparo.
 
-- 4.3 - Será validado se, ao executar o método `get_available_dishes`, o método não retorna os pratos cujos ingredientes não sejam suficientes para seu preparo.
-
----
-
-## Depois de terminar o desenvolvimento
-
-Para **"entregar"** seu projeto, siga os passos a seguir:
-
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-013-c`
-
-Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
-
-⚠ Lembre-se que garantir que todas as _issues_ comentadas pelo **Lint** estão resolvidas! ⚠
-
----
-
-### Revisando um pull request
-
-À medida que você e as outras pessoas que estudam na Trybe forem entregando os projetos, vocês receberão um alerta via Slack para também fazer a revisão dos Pull Requests dos seus colegas. Fiquem atentos às mensagens do "Pull Reminders" no Slack!
-
-Use o material que você já viu sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os projetos que chegaram para você.
-
-# Avisos Finais
-
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
-
-Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
-
-O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
+-   4.3 - Será validado se, ao executar o método `get_available_dishes`, o método não retorna os pratos cujos ingredientes não sejam suficientes para seu preparo.
 
 ---
