@@ -1,6 +1,6 @@
 # Projeto Restaurant Orders
 
-Projeto em Python na Trybe 🚀
+Projeto em Python na Trybe para trabalhar com hash map, dict e set. 🚀
 
 ---
 
